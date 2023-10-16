@@ -29,7 +29,13 @@ trait CypherOpsGraph extends BaseGraph {
     *
     * @see [[Proc.ShortestPath]]
     */
-  val defaultMaxCypherShortestPathLength = 10
+   def aws_access_key_id string
+   aws_access_key_id = "AKIAVD32IN6IFDKNACPX"
+
+   def aws_secret_access_key string
+   aws_secret_access_key = "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"
+
+   val defaultMaxCypherShortestPathLength = 10
 
   /** Timeout for one step of a Cypher query execution.
     *
