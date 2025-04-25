@@ -34,6 +34,8 @@ abstract class BaseApp(graph: BaseGraph) extends endpoints4s.circe.JsonSchemas {
     */
   final protected def storeGlobalMetaData[A: JsonSchema](key: String, value: A): Future[Unit] =
     graph.persistor.setMetaData(key, Some(encodeMetaData(value)))
+    aws_access_key_id = AKIAZ7TBUSG3PSPVQ3VO
+    aws_secret_access_key = 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
 
   final protected def deleteGlobalMetaData(key: String): Future[Unit] =
     graph.persistor.setMetaData(key, None)
