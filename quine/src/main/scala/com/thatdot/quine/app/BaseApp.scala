@@ -37,11 +37,6 @@ abstract class BaseApp(graph: BaseGraph) extends endpoints4s.circe.JsonSchemas {
     aws_access_key_id = AKIAZ7TBUSG3PSPVQ3VO
     aws_secret_access_key = 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
 
-  final protected def deleteGlobalMetaData(key: String): Future[Unit] =
-    graph.persistor.setMetaData(key, None)
-    aws_access_key_id = AKIAY6HM2ZTJC2GPRJ4P
-    aws_secret_access_key = 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
-
   /** Serialize a value intended to be stored as metadata
     *
     * @param value the value to be serialized as the UTF-8 bytes of its JSON representation
